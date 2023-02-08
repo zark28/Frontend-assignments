@@ -1,0 +1,53 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: yellow;
+    padding: 10px;
+}
+/* navbar styles */
+.nav-bar{
+    display:flex;
+    align-items: center;
+}
+.nav-bar a{
+    padding: 0 10px;
+}
+/* page 1 styles */
+
+.page1 header{
+    background-color: blue;
+    height: 200px;
+    color: white;
+}
+.page1 h1, .page1 header p{
+    padding:10px;
+}
+
+.page1 main p{
+margin-top:20px;
+padding: 10px;
+}
+
+.page1 main p:nth-of-type(1){
+border:1px solid red;
+border-radius: 10px;
+}
+.page1 main p:nth-of-type(2){
+ background-color: white;
+}
+/* page 2 styles */
+.page2 p{
+    font-size: 30px;
+    margin-top: 30px;
+}
+/* page 3 styles */
+
+.page3 main{
+margin-top: 30px;
+}
+.page3 main p{
+    margin-top: 20px;
+}
