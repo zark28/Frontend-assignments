@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./fav.png" type="image/x-icon">
+    <title>Assignment 11</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .circle{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-direction: column;
+            width: 500px;
+            height: 500px;
+            border-radius: 50%;
+        }
+        </style>
+</head>
+<body>
+    <div class="circle"></div>
+    <script>
+       
+        let circle=document.querySelector('.circle')
+        let colors=['blue','red','yellow','pink','black','brown','lightblue','yellowgreen','wheat','plum']
+        let counter=0
+        circle.style.backgroundColor = colors[counter]
+
+        circle.addEventListener('click',()=>{
+            if(counter<(colors.length-1)){
+                counter +=1
+
+            }else{
+                counter=0
+            }
+        console.log(counter);
+            circle.style.backgroundColor = colors[counter]
+        })
+    </script>
+</body>
+</html>
