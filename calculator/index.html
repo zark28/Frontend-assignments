@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="screen" id="display"></div>
+        <section class="buttons">
+            <div class="button-row">
+                <div onclick="handleClear()" class="operator ">Clear</div>
+                <div class="operator small-btn" onclick="handleOperation('/')">/</div>
+            </div>
+            <div class="button-row">
+                <div class="number">7</div>
+                <div class="number">8</div>
+                <div class="number">9</div>
+                <div onclick="handleOperation('x')">x</div>
+            </div>
+            <div class="button-row">
+                <div class="number">4</div>
+                <div class="number">5</div>
+                <div class="number">6</div>
+                <div onclick="handleOperation('-')">-</div>
+            </div>
+            <div class="button-row">
+                <div class="number">1</div>
+                <div class="number">2</div>
+                <div class="number">3</div>
+                <div onclick="handleOperation('+')">+</div>
+            </div>
+            <div class="button-row">
+                <div class="number">0</div>
+                <div class="small-btn" onclick="handleEvaluate()">=</div>
+            </div>
+        </section>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>
