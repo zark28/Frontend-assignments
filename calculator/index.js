@@ -1,6 +1,5 @@
 // select display screen
 const screenValues= document.getElementById('display')
-let operandCount=0
 // add click event to all number inputs
 document.querySelectorAll('.number').forEach((input)=>{
     input.addEventListener('click',handleInputs)
@@ -21,22 +20,8 @@ screenValues.innerText=''
 function handleOperation(operand){
     if(screenValues.innerText==''){
         return;
-    }
-    
-    if(operandCount<1){
-        operandCount=1
-        screenValues.innerText+=`${ operand }`
-        console.log(screenValues,'papa');
-        return;
-    }
-    if(operandCount>0){
-        handleEvaluate()
-        console.log(screenValues,'killer');
-
-        operandCount=0
-        screenValues.innerText+=`${ operand }`
-        return
-    }
+    }  
+     screenValues.innerText+=`${ operand }`
 }
 
 // fucntion to eveluate inputs
