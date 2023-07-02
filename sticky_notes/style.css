@@ -1,0 +1,60 @@
+*{
+    padding: 0;
+    margin: 0;
+    
+}
+
+body{
+    font-family:Roboto,'Open Sans', sans-serif;
+    padding: 40px;
+    width: 100dvw;
+    background: #000;
+}
+/* utility classes */
+.flex-center-column,
+.flex-center-row{
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content: center;
+     
+}
+.flex-center-column{
+    flex-direction: column;
+}
+/* buttons */
+.btn{
+    padding: 5px;
+    border: none;
+    color: #fff;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.btn:hover{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.196) ,rgba(0, 0, 0, 0.324)) ;
+}
+.delete{
+    background-color: red;
+}
+.create{
+     background-color: green;
+
+}
+.edit{
+     background-color: rgb(119, 159, 38);
+
+}
+/* main  body*/
+.container{
+     background-color: #bab5b5;
+    gap: 100px;
+}
+.input-container{
+    align-items: flex-start;
+    gap: 20px;
+}
+.input-container textarea{
+    padding: 5px;
+    width: 500px;
+}
+

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>My Sticky Notes</title>
+</head>
+<body>
+    <div class="container flex-center-column">
+        <div class="input-container flex-center-column">
+
+            <textarea type="text" placeholder="add note here.." name="note" id="note" cols="50" rows="3" required></textarea>
+            <button class="btn create" id="btn-action">Create note</button>
+        </div>
+        <div class="notes-container" id="notes-list">
+                <div class="note">
+                    <p></p>
+                    <span>
+                        <button class="btn delete" id="btn-delete">Delete</button>
+                        <button class="btn edit" id="btn-edit">Edit</button>
+                    </span>
+                </div>
+        </div>
+    </div>
+</body>
+</html>
