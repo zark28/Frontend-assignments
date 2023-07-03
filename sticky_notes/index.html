@@ -11,17 +11,12 @@
         <div class="input-container flex-center-column">
 
             <textarea type="text" placeholder="add note here.." name="note" id="note" cols="50" rows="3" required></textarea>
-            <button class="btn create" id="btn-action">Create note</button>
+            <button class="btn create" id="btn-action" onclick="handleCreatEditNote()"></button>
         </div>
-        <div class="notes-container" id="notes-list">
-                <div class="note">
-                    <p></p>
-                    <span>
-                        <button class="btn delete" id="btn-delete">Delete</button>
-                        <button class="btn edit" id="btn-edit">Edit</button>
-                    </span>
-                </div>
+        <div class="notes-container flex-center-row" id="notes-list">
+                
         </div>
     </div>
+<script src="./index.js"></script>
 </body>
 </html>

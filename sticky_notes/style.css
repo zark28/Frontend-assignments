@@ -6,9 +6,9 @@
 
 body{
     font-family:Roboto,'Open Sans', sans-serif;
-    padding: 40px;
-    width: 100dvw;
-    background: #000;
+    /* padding: 40px; */
+    /* width: 100dvw; */
+    /* background: #000; */
 }
 /* utility classes */
 .flex-center-column,
@@ -35,6 +35,7 @@ body{
 }
 .delete{
     background-color: red;
+    width: 50px;
 }
 .create{
      background-color: green;
@@ -42,19 +43,55 @@ body{
 }
 .edit{
      background-color: rgb(119, 159, 38);
+     width: 50px;
+     margin-left: 10px;
 
 }
 /* main  body*/
 .container{
-     background-color: #bab5b5;
-    gap: 100px;
+     /* background-color: #bab5b5; */
+    gap: 50px;
+    height: 100vh;
+    justify-content: flex-start;
+    overflow: hidden;
+
 }
 .input-container{
     align-items: flex-start;
+    margin-top: 40px;
     gap: 20px;
 }
 .input-container textarea{
     padding: 5px;
-    width: 500px;
+    width: 100%;
+}
+.notes-container{
+width: 80%;
+justify-content: flex-start;
+align-items: flex-start;
+flex-wrap: wrap;
+gap: 20px;
+flex: 1;
+height: 100%;
+overflow-y: scroll;
+padding: 50px 0;
+}
+.note{
+    max-width: 400px;
+    background: #cac7c7;
+    min-width: 300px;
+    height: 200px;
+    padding:5px;
+    border-radius: 5px;
+    box-shadow: 4px 5px 10px #0000008b;
+    justify-content: space-between;
+}
+.note p{
+    /* background: #ae8585; */
+    width: 100%;
+    flex: 1;
+    margin: 15px;
+     color: #000;
+     font-weight: 800;
 }
 
