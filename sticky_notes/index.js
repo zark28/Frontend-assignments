@@ -42,6 +42,7 @@ function handleCreatEditNote(){
         notesList.replaceChild(editedNote,oldNote)
         document.querySelector('#note').value=''
         createEditBtn.innerHTML='Creat New Note'
+        createMode=true
     }
 }
 
